@@ -16,4 +16,9 @@ class MathTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(21, Math::gcd(1071, 462));
         $this->assertEquals(21, Math::gcd(-1071, -462));
     }
+    
+    public function testLeastCommonMultiple()
+    {
+        $this->assertEquals(12, Math::lcm(3, 4));
+    }
 }

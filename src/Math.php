@@ -38,5 +38,19 @@ class Math
         
         return $a;
     }
-
+    
+    /**
+     * Computes the least common multiple.
+     * 
+     * It uses reduction by the greatest common divisor.
+     * 
+     * @param int $a
+     * @param int $b
+     * 
+     * @return int the least common multiple
+     */
+    public static function lcm($a, $b)
+    {
+        return (abs($a * $b) / self::gcd($a, $b));
+    }
 }

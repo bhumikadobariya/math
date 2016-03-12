@@ -1,0 +1,28 @@
+{
+    "name": "lukaszmakuch/math",
+    "description": "Allows to compute the least common multiple and the greatest common divisor.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Łukasz Makuch",
+            "email": "kontakt@lukaszmakuch.pl",
+            "homepage": "http://lukaszmakuch.pl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "lukaszmakuch\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "lukaszmakuch\\": "test/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "4.7.*",
+        "phpdocumentor/phpdocumentor": "2.*"
+    }
+}

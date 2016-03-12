@@ -28,15 +28,15 @@ class Math
      */
     public static function gcd($a, $b)
     {
-        $a = abs($a);
-        $b = abs($b);
-        while ($b != 0) {
-            $tmp = $b;
-            $b = $a % $b;
-            $a = $tmp;
+        $ta = abs($a);
+        $tb = abs($b);
+        while ($tb != 0) {
+            $tmp = $tb;
+            $tb = $ta % $tb;
+            $ta = $tmp;
         }
         
-        return $a;
+        return $ta;
     }
     
     /**
